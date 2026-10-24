@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adarsh Nautiyal is a Computer Science undergraduate specializing in Data Science, with project experience in AI applications, data analysis, communication, and technology solutions." />
+  <meta name="keywords" content="Adarsh Nautiyal, portfolio, data science, technology solutions, business development, communication, AI projects, UPES" />
+  <meta name="author" content="Adarsh Nautiyal" />
+  <meta property="og:title" content="Adarsh Nautiyal | Technology, Data Science & Business Development" />
+  <meta property="og:description" content="Computer Science undergraduate with AI project experience, data analysis, communication, presentation, and team coordination experience." />
+  <meta property="og:type" content="website" />
+  <title>Adarsh Nautiyal | Technology & Data Science Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== SCROLL PROGRESS BAR ===================== -->
+  <div id="scroll-progress-bar"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AN<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Hire Me
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">Adarsh <span class="gradient-text">Nautiyal</span></h1>
+        <div class="hero-headline">
+          <span>Computer Science Student | </span>
+          <span class="typed-text" id="typed-text"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-subheadline">
+          I combine technical project experience with communication, presentation, and team coordination to help connect technology with real-world business needs.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="view-projects-btn">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="resume.pdf" class="btn btn-secondary" download id="download-resume-btn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline" id="contact-btn">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/NautiyalX" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" id="social-github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/adarsh-nautiyal" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" id="social-linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:adarshnautiyal7383@gmail.com" class="social-icon" aria-label="Email" id="social-email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <div class="image-glow"></div>
+          <div class="image-ring ring-1"></div>
+          <div class="image-ring ring-2"></div>
+          <div class="image-ring ring-3"></div>
+          <img src="profile.png" alt="Adarsh Nautiyal" class="hero-profile-img" id="hero-profile-img" />
+          <div class="hero-badge-float badge-ai">
+            <i class="fas fa-brain"></i> AI Dev
+          </div>
+          <div class="hero-badge-float badge-ml">
+            <i class="fas fa-chart-line"></i> ML
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num" data-target="3">0</span>
+        <span class="stat-label">Featured Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="3">0</span>
+        <span class="stat-label">Experience Entries</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="2">0</span>
+        <span class="stat-label">Completed Certifications</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="4">0</span>
+        <span class="stat-label">Skill Categories</span>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-subtitle">A technology-focused problem solver who values clear communication, collaboration, and practical outcomes.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-col">
+          <div class="about-card glass-card reveal">
+            <p class="about-intro">
+              Hey there! I'm <strong>Adarsh Nautiyal</strong>, a B.Tech Computer Science & Engineering student at 
+              <span class="accent">UPES, Dehradun</span>, deeply passionate about the intersection of Artificial Intelligence, 
+              Data Science, and Client-Focused Problem Solving.
+            </p>
+            <p class="about-body">
+              I enjoy understanding a problem, organizing information, and communicating ideas clearly. Through projects in
+              health technology, network intrusion detection, and data analytics, I've explored how technical tools can
+              support useful decisions and user-focused solutions.
+            </p>
+            <p class="about-body">
+              Alongside technical work, I bring experience in presentations, student support, and coordinating a 10-member team.
+              I'm interested in opportunities where technology, client needs, and business development meet.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>B.Tech CSE @ UPES, Dehradun</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-brain"></i>
+                <span>Technology & Data Analysis</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-code"></i>
+                <span>Client-Focused Problem Solving</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-users"></i>
+                <span>Communication & Team Coordination</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Dehradun, Uttarakhand, India</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-envelope"></i>
+                <span>adarshnautiyal7383@gmail.com</span>
+              </div>
+            </div>
+            <a href="resume.pdf" class="btn btn-primary" download style="margin-top:1.5rem; display:inline-flex;">
+              <i class="fas fa-file-pdf"></i> View Resume
+            </a>
+          </div>
+        </div>
+
+        <div class="about-cards-col">
+          <div class="mini-card glass-card reveal" style="--delay:0.1s">
+            <div class="mini-card-icon"><i class="fas fa-robot"></i></div>
+            <h4>AI & Machine Learning</h4>
+            <p>Exploring machine-learning workflows and AI-enabled applications through hands-on projects.</p>
+          </div>
+          <div class="mini-card glass-card reveal" style="--delay:0.2s">
+            <div class="mini-card-icon"><i class="fas fa-database"></i></div>
+            <h4>Data Science</h4>
+            <p>Working with structured datasets, preprocessing, exploratory analysis, and predictive modelling.</p>
+          </div>
+          <div class="mini-card glass-card reveal" style="--delay:0.3s">
+            <div class="mini-card-icon"><i class="fas fa-layer-group"></i></div>
+            <h4>Full-Stack Dev</h4>
+            <p>Understanding application components, REST APIs, and data management for user-focused features.</p>
+          </div>
+          <div class="mini-card glass-card reveal" style="--delay:0.4s">
+            <div class="mini-card-icon"><i class="fas fa-atom"></i></div>
+            <h4>Generative AI</h4>
+            <p>Learning how AI-enabled tools can support practical workflows and business-focused use cases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Skills</span>
+        <h2 class="section-title">Skills & Strengths</h2>
+        <p class="section-subtitle">A combination of technical foundations and people-focused skills.</p>
+      </div>
+      <div class="skills-tabs">
+        <button class="skill-tab active" data-tab="technical" id="tab-technical"><i class="fas fa-code"></i> Technical</button>
+        <button class="skill-tab" data-tab="data" id="tab-data"><i class="fas fa-chart-bar"></i> Data & AI</button>
+        <button class="skill-tab" data-tab="tools" id="tab-tools"><i class="fas fa-toolbox"></i> Tools & APIs</button>
+        <button class="skill-tab" data-tab="professional" id="tab-professional"><i class="fas fa-users"></i> Professional</button>
+      </div>
+      <div class="skills-content">
+        <div class="skill-panel active" id="panel-technical"><div class="skills-grid">
+          <div class="skill-card reveal glass-card" data-skill="Python"><div class="skill-icon"><i class="fab fa-python"></i></div><span class="skill-name">Python</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:80%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="SQL"><div class="skill-icon"><i class="fas fa-database"></i></div><span class="skill-name">SQL</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:75%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="JavaScript"><div class="skill-icon"><i class="fab fa-js-square"></i></div><span class="skill-name">JavaScript</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:70%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="HTML"><div class="skill-icon"><i class="fab fa-html5"></i></div><span class="skill-name">HTML</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:80%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="CSS"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><span class="skill-name">CSS</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:80%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="MySQL"><div class="skill-icon"><i class="fas fa-database"></i></div><span class="skill-name">MySQL</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:75%"></div></div></div>
+        </div></div>
+        <div class="skill-panel" id="panel-data"><div class="skills-grid">
+          <div class="skill-card reveal glass-card" data-skill="Scikit-learn"><div class="skill-icon"><i class="fas fa-cogs"></i></div><span class="skill-name">Scikit-learn</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:75%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Pandas"><div class="skill-icon"><i class="fas fa-table"></i></div><span class="skill-name">Pandas</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:75%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="NumPy"><div class="skill-icon"><i class="fas fa-calculator"></i></div><span class="skill-name">NumPy</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:70%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Machine Learning"><div class="skill-icon"><i class="fas fa-brain"></i></div><span class="skill-name">Machine Learning</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:70%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Data Analysis"><div class="skill-icon"><i class="fas fa-chart-line"></i></div><span class="skill-name">Data Analysis</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:75%"></div></div></div>
+        </div></div>
+        <div class="skill-panel" id="panel-tools"><div class="skills-grid">
+          <div class="skill-card reveal glass-card" data-skill="REST APIs"><div class="skill-icon"><i class="fas fa-network-wired"></i></div><span class="skill-name">REST APIs</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:70%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Git"><div class="skill-icon"><i class="fab fa-git-alt"></i></div><span class="skill-name">Git</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:75%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="GitHub"><div class="skill-icon"><i class="fab fa-github"></i></div><span class="skill-name">GitHub</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:75%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Flask"><div class="skill-icon"><i class="fas fa-flask"></i></div><span class="skill-name">Flask</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:70%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Docker"><div class="skill-icon"><i class="fab fa-docker"></i></div><span class="skill-name">Docker</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:65%"></div></div></div>
+        </div></div>
+        <div class="skill-panel" id="panel-professional"><div class="skills-grid">
+          <div class="skill-card reveal glass-card" data-skill="Communication"><div class="skill-icon"><i class="fas fa-comments"></i></div><span class="skill-name">Communication</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:85%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Presentations"><div class="skill-icon"><i class="fas fa-chalkboard-user"></i></div><span class="skill-name">Presentations</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:80%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Active Listening"><div class="skill-icon"><i class="fas fa-ear-listen"></i></div><span class="skill-name">Active Listening</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:80%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Team Coordination"><div class="skill-icon"><i class="fas fa-people-group"></i></div><span class="skill-name">Team Coordination</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:80%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Problem-solving"><div class="skill-icon"><i class="fas fa-lightbulb"></i></div><span class="skill-name">Problem-solving</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:80%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Adaptability"><div class="skill-icon"><i class="fas fa-arrows-rotate"></i></div><span class="skill-name">Adaptability</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:75%"></div></div></div>
+          <div class="skill-card reveal glass-card" data-skill="Time Management"><div class="skill-icon"><i class="fas fa-clock"></i></div><span class="skill-name">Time Management</span><div class="skill-bar-wrap"><div class="skill-bar" style="--w:80%"></div></div></div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE SECTION ===================== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">// Experience</span><h2 class="section-title">Experience</h2><p class="section-subtitle">Project, internship, and team coordination experience.</p></div>
+      <div class="timeline">
+        <div class="timeline-item reveal"><div class="timeline-marker"><div class="timeline-dot"></div><div class="timeline-line"></div></div><div class="timeline-content glass-card">
+          <div class="timeline-header"><div><h3 class="timeline-role">Project Experience — VentureSignalAI</h3><p class="timeline-company"><i class="fas fa-building"></i> AI Due Diligence Platform · Project associated with IBM</p></div><div class="timeline-meta"><span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jun 2026 – Jul 2026</span></div></div>
+          <div class="timeline-achievements"><div class="achievement-item"><i class="fas fa-check-circle"></i><span>Worked on an AI-powered due diligence platform project.</span></div><div class="achievement-item"><i class="fas fa-check-circle"></i><span>Gained exposure to applying AI-enabled technology to a business-focused due diligence use case.</span></div></div>
+          <div class="timeline-tags"><span class="tag">AI Applications</span><span class="tag">Business Use Cases</span><span class="tag">Technology Solutions</span></div>
+        </div></div>
+        <div class="timeline-item reveal" style="--delay:0.1s"><div class="timeline-marker"><div class="timeline-dot"></div><div class="timeline-line"></div></div><div class="timeline-content glass-card">
+          <div class="timeline-header"><div><h3 class="timeline-role">Fitness & Nutrition Intern</h3><p class="timeline-company"><i class="fas fa-building"></i> Bulls Fitness Club</p></div><div class="timeline-meta"><span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jun 2025 – Jul 2025</span></div></div>
+          <div class="timeline-achievements"><div class="achievement-item"><i class="fas fa-check-circle"></i><span>Applied Health Science minor coursework and personal bodybuilding experience to support clients working toward individual fitness goals.</span></div><div class="achievement-item"><i class="fas fa-check-circle"></i><span>Discussed training routines, fitness objectives, and general nutrition habits to encourage practical, sustainable lifestyle choices.</span></div><div class="achievement-item"><i class="fas fa-check-circle"></i><span>Used active listening and clear communication to build rapport and encourage consistency.</span></div></div>
+          <div class="timeline-tags"><span class="tag">Client Communication</span><span class="tag">Active Listening</span><span class="tag">Fitness & Nutrition</span></div>
+        </div></div>
+        <div class="timeline-item reveal" style="--delay:0.2s"><div class="timeline-marker"><div class="timeline-dot"></div></div><div class="timeline-content glass-card">
+          <div class="timeline-header"><div><h3 class="timeline-role">Social Intern</h3><p class="timeline-company"><i class="fas fa-building"></i> Gulley Classes Foundation</p></div><div class="timeline-meta"><span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jun 2024 – Jul 2024</span></div></div>
+          <div class="timeline-achievements"><div class="achievement-item"><i class="fas fa-check-circle"></i><span>Supported educational outreach activities, presentations, and stakeholder coordination.</span></div><div class="achievement-item"><i class="fas fa-check-circle"></i><span>Coordinated a 10-member team by helping organize tasks, track progress, and support day-to-day execution.</span></div><div class="achievement-item"><i class="fas fa-check-circle"></i><span>Assisted students with questions and learning activities, and contributed to website improvements using HTML, CSS, and JavaScript.</span></div></div>
+          <div class="timeline-tags"><span class="tag">Presentations</span><span class="tag">Team Coordination</span><span class="tag">Communication</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">// Projects</span><h2 class="section-title">Selected Projects</h2><p class="section-subtitle">Project work across AI applications, cybersecurity, and data analysis.</p></div>
+      <div class="projects-grid">
+        <div class="project-card glass-card featured-project reveal">
+          <div class="project-card-top"><div class="project-icon-wrap"><i class="fas fa-heartbeat"></i></div><div class="project-badges"><span class="project-badge badge-inprogress"><span class="badge-dot pulse"></span> In Progress</span><span class="project-badge badge-featured">Featured</span></div></div>
+          <h3 class="project-title">HealthSync AI — Intelligent Health & Fitness Platform</h3>
+          <p class="project-desc">A health and fitness application concept covering personalized workout planning, diet guidance, and progress tracking. The project explores application components and data management to support user-focused features.</p>
+          <div class="project-tech-stack"><span class="tech-tag">Python</span><span class="tech-tag">React</span><span class="tech-tag">FastAPI</span><span class="tech-tag">SQLite</span><span class="tech-tag">REST APIs</span></div>
+          <div class="project-links"><a href="https://github.com/NautiyalX" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-primary" id="healthsync-github"><i class="fab fa-github"></i> GitHub Profile</a></div>
+        </div>
+        <div class="project-card glass-card reveal" style="--delay:0.15s">
+          <div class="project-card-top"><div class="project-icon-wrap pi-purple"><i class="fas fa-shield-alt"></i></div><div class="project-badges"><span class="project-badge badge-inprogress"><span class="badge-dot pulse"></span> Project</span></div></div>
+          <h3 class="project-title">NetSentinel AI — ML-Based Network Intrusion Detection</h3>
+          <p class="project-desc">A machine-learning approach to network intrusion detection using the NSL-KDD dataset, with data-analysis workflows and classification methods including Decision Trees and Random Forest.</p>
+          <div class="project-tech-stack"><span class="tech-tag">Python</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">NSL-KDD</span><span class="tech-tag">Flask</span><span class="tech-tag">Docker</span></div>
+          <div class="project-links"><a href="https://github.com/NautiyalX" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-primary" id="netsentinel-github"><i class="fab fa-github"></i> GitHub Profile</a></div>
+        </div>
+        <div class="project-card glass-card reveal" style="--delay:0.3s">
+          <div class="project-card-top"><div class="project-icon-wrap pi-green"><i class="fas fa-chart-pie"></i></div><div class="project-badges"><span class="project-badge badge-inprogress"><span class="badge-dot pulse"></span> Project</span></div></div>
+          <h3 class="project-title">Fitness & Health Data Analytics</h3>
+          <p class="project-desc">Analysis of fitness, sleep, and weight-related datasets using preprocessing and exploratory data analysis, with regression explored for weight prediction and classification for goal-success analysis.</p>
+          <div class="project-tech-stack"><span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">NumPy</span><span class="tech-tag">Scikit-learn</span></div>
+          <div class="project-links"><a href="https://github.com/NautiyalX" target="_blank" rel="noopener noreferrer" class="btn-project btn-project-primary" id="analytics-github"><i class="fab fa-github"></i> GitHub Profile</a></div>
+        </div>
+      </div>
+      <div class="github-stats-section reveal"><h3 class="stats-heading"><i class="fab fa-github"></i> Explore My Work</h3><p class="section-subtitle">Visit my GitHub profile for repositories and project updates.</p><div class="project-links" style="justify-content:center;margin-top:1rem"><a href="https://github.com/NautiyalX" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> GitHub Profile</a></div></div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION SECTION ===================== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Education</span>
+        <h2 class="section-title">Academic Background</h2>
+        <p class="section-subtitle">B.Tech Computer Science and Engineering, specializing in Data Science.</p>
+      </div>
+
+      <div class="edu-timeline">
+        <div class="edu-item reveal">
+          <div class="edu-marker">
+            <div class="edu-dot">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card glass-card">
+            <div class="edu-card-header">
+              <div class="edu-year">Aug 2023 – Present</div>
+              <div class="edu-level">B.Tech</div>
+            </div>
+            <h3 class="edu-degree">Computer Science & Engineering</h3>
+            <p class="edu-institution"><i class="fas fa-university"></i> UPES, Dehradun</p>
+            <div class="edu-grade">
+              <span class="grade-label">CGPA</span>
+              <div class="grade-bar-wrap">
+                <div class="grade-bar" style="--gw:69.9%">
+                  <span class="grade-text">6.99 / 10</span>
+                </div>
+              </div>
+            </div>
+            <div class="edu-tags">
+              <span class="tag">AI & ML</span>
+              <span class="tag">Data Science</span>
+              <span class="tag">Full Stack</span>
+              <span class="tag">Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-item reveal" style="--delay:0.15s">
+          <div class="edu-marker">
+            <div class="edu-dot">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card glass-card">
+            <div class="edu-card-header">
+              <div class="edu-year">2021 – 2022</div>
+              <div class="edu-level">Class XII</div>
+            </div>
+            <h3 class="edu-degree">Class XII</h3>
+            <p class="edu-institution"><i class="fas fa-university"></i> CBSE Board</p>
+            <div class="edu-grade">
+              <span class="grade-label">Percentage</span>
+              <div class="grade-bar-wrap">
+                <div class="grade-bar" style="--gw:63%">
+                  <span class="grade-text">63%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-item reveal" style="--delay:0.3s">
+          <div class="edu-marker">
+            <div class="edu-dot">
+              <i class="fas fa-book"></i>
+            </div>
+          </div>
+          <div class="edu-card glass-card">
+            <div class="edu-card-header">
+              <div class="edu-year">2019 – 2020</div>
+              <div class="edu-level">Class X</div>
+            </div>
+            <h3 class="edu-degree">Class X</h3>
+            <p class="edu-institution"><i class="fas fa-university"></i> CBSE Board</p>
+            <div class="edu-grade">
+              <span class="grade-label">Percentage</span>
+              <div class="grade-bar-wrap">
+                <div class="grade-bar grade-bar-good" style="--gw:88%">
+                  <span class="grade-text">88%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS SECTION ===================== -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Certifications</span>
+        <h2 class="section-title">Credentials</h2>
+        <p class="section-subtitle">Verified learning milestones from industry-leading platforms.</p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon-wrap cert-aws">
+            <i class="fab fa-aws"></i>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">AWS Cloud Practitioner Essentials</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> Amazon Web Services (AWS)</p>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-badge">
+            <i class="fas fa-certificate"></i> Verified
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal" style="--delay:0.15s">
+          <div class="cert-icon-wrap cert-hf">
+            <i class="fas fa-smile"></i>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">NLP with Transformers</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> HuggingFace</p>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-badge">
+            <i class="fas fa-certificate"></i> Verified
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal" style="--delay:0.3s">
+          <div class="cert-icon-wrap cert-cwh">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Data Science Course</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> Code With Harry</p>
+            <span class="cert-year ongoing">🔥 Ongoing</span>
+          </div>
+          <div class="cert-badge cert-ongoing">
+            <i class="fas fa-spinner fa-spin"></i> In Progress
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Interested in technology, data, or business-focused opportunities? Let's connect.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Side -->
+        <div class="contact-info reveal">
+          <div class="contact-card glass-card">
+            <h3>Get in Touch</h3>
+            <p class="contact-intro">I'm interested in opportunities where communication, client needs, and technology solutions come together.</p>
+
+            <div class="contact-details">
+              <a href="mailto:adarshnautiyal7383@gmail.com" class="contact-detail-item" id="contact-email-link">
+                <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <span class="cd-label">Email</span>
+                  <span class="cd-value">adarshnautiyal7383@gmail.com</span>
+                </div>
+              </a>
+              <a href="tel:+919927624325" class="contact-detail-item" id="contact-phone-link">
+                <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+                <div>
+                  <span class="cd-label">Phone</span>
+                  <span class="cd-value">+91 9927624325</span>
+                </div>
+              </a>
+              <a href="https://github.com/NautiyalX" target="_blank" rel="noopener noreferrer" class="contact-detail-item" id="contact-github-link">
+                <div class="contact-detail-icon"><i class="fab fa-github"></i></div>
+                <div>
+                  <span class="cd-label">GitHub</span>
+                  <span class="cd-value">github.com/NautiyalX</span>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/adarsh-nautiyal" target="_blank" rel="noopener noreferrer" class="contact-detail-item" id="contact-linkedin-link">
+                <div class="contact-detail-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div>
+                  <span class="cd-label">LinkedIn</span>
+                  <span class="cd-value">adarsh-nautiyal</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://github.com/NautiyalX" target="_blank" rel="noopener noreferrer" class="social-icon" id="footer-github"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/adarsh-nautiyal" target="_blank" rel="noopener noreferrer" class="social-icon" id="footer-linkedin"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:adarshnautiyal7383@gmail.com" class="social-icon" id="footer-email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="contact-form-wrap reveal" style="--delay:0.2s">
+          <form class="contact-form glass-card" id="contact-form" novalidate>
+            <h3>Send a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" name="name" placeholder="John Doe" autocomplete="name" required />
+                <span class="form-error" id="error-name"></span>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" name="email" placeholder="john@example.com" autocomplete="email" required />
+                <span class="form-error" id="error-email"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" name="subject" placeholder="Project Collaboration / Internship Offer" required />
+              <span class="form-error" id="error-subject"></span>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+              <span class="form-error" id="error-message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="form-success" role="status" aria-live="polite">
+              <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+            </div>
+            <div class="form-error" id="form-failure" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>AN<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>Building intelligent, impactful experiences — one line of code at a time.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/NautiyalX" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/adarsh-nautiyal" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:adarshnautiyal7383@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 <strong>Adarsh Nautiyal</strong>. Crafted with <i class="fas fa-heart" style="color:#f43f5e"></i> and lots of ☕</p>
+      <p class="footer-tech">Built with HTML · CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
